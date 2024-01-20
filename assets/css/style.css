@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
 }
 
-nav {
+.nav-2 {
     background-image: url(https://blog.ipog.edu.br/wp-content/uploads/2017/12/perito-criminal.jpg);
     background-size: calc( 100vh + 50%) 100vh;
     display: flex;
@@ -15,9 +15,14 @@ nav {
     border-top: 3px solid #555;
     border-bottom: 4px solid #555;
     transition: .6s;
+    width: 100%;
 }
 
-nav:hover {
+.opener {
+    display: none;
+}
+
+.nav-2:hover {
     transition: .6s;
     border-top: 3px solid rgb(255, 255, 79);
     border-bottom: 4px solid  rgb(255, 255, 79);
@@ -28,13 +33,13 @@ header {
     justify-content: center;
 }
 
-ul  {
+.nav-2 ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-ul li {
+.nav-2 ul li {
     color: white;
     list-style: none;
     font-size: 25px;
@@ -48,14 +53,14 @@ ul li {
     border: 2px solid transparent;
 } 
 
-ul li:hover {
+.nav-2 ul li:hover {
     color: #ffea00;
     transition: .5s;
     transform: scale(1.1);
     border: 1px solid #ffea00;
 }
 
-nav img {
+.logo {
     width: 120px;
     height: 120px;
     border-radius: 100%;
@@ -66,7 +71,7 @@ nav img {
     transition: .6s;
 }
 
-nav img:hover {
+.logo:hover {
     border: 8px solid #ccc;
     transition: .6s;
     cursor: pointer;
@@ -301,20 +306,20 @@ input {
 }
 
 @media screen and (min-width: 700px) and (max-width: 799px) {
-    nav {
+    .nav-2 {
         width: 100%;
         height: 130px;
         background-size: 120% 400%;
     }
 
-    nav img {
+    .nav-2 img {
         height: 100px;
         width: 100px;
         margin-left: 5px;
         margin-right: 30px;
     }
 
-    ul li {
+    .nav-2 ul li {
         margin-right: 10px;
         font-size: 22px;
     }
@@ -367,17 +372,15 @@ input {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1029px){
-    nav {
+    .nav-2 {
         width: 100%;
         height: 130px;
         background-size: 120% 400%;
     }
 
-    nav img {
+    .logo {
         height: 110px;
         width: 110px;
-        margin-left: 50%;
-        margin-right: 10%;
     }
 
     .content {
@@ -441,19 +444,18 @@ input {
 }
 
 @media screen and (min-width: 800px) and (max-width: 899px){
-    nav {
+    .nav-2 {
         width: 100%;
         height: 130px;
         background-size: 110% 500%;
     }
 
-    nav img {
+    .logo {
         height: 110px;
         width: 110px;
-        margin-left: 50%;
     }
 
-    ul li {
+    .nav-2 ul li {
         min-width: 10px;
         margin-right: 20px;
         font-size: 24px;
@@ -522,20 +524,20 @@ input {
 }
 
 @media screen and (min-width: 600px) and (max-width: 699px){
-    nav {
+    .nav-2 {
         width: 100%;
         height: 120px;
         background-size: 120% 400%;
     }
 
-    nav img {
+    .logo {
         height: 90px;
         width: 90px;
         margin-left: 5px;
         margin-right: 30px;
     }
 
-    ul li {
+    .nav-2 ul li {
         margin-right: 10px;
         font-size: 18px;
     }
@@ -608,23 +610,60 @@ input {
 }
 
 @media screen and (min-width: 500px) and (max-width: 599px){
-    nav {
-        width: 100%;
-        height: 120px;
-        background-size: 120% 400%;
+    .nav-3-1 {
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: calc(100vw - 30%);
+        height: calc(100vw + 10%);
+        align-items: center;
+        justify-content: center;
+        top: 5px;
+        right: 0;
+    }
+
+    .nav-3-2 {
         display: none;
     }
 
-    nav img {
+    .opener {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opener2 {
+        width: 50px;
+        height: 50px;
+        margin-left: 50%;
+    }
+
+    .opener3 {
+        background-color: transparent;
+        margin-left: 50%;
+    }
+
+    .nav-2 {
+        width: 100%;
+        height: 120px;
+        background-size: 120% 400%;
+    }
+
+    .logo {
         height: 90px;
         width: 90px;
         margin-left: 5px;
         margin-right: 30px;
     }
 
-    ul li {
+    .nav-2 ul li {
         margin-right: 10px;
-        font-size: 18px;
+        font-size: 28px;
+        margin-top: 70px;
+        font-weight: bold;
+    }
+
+    .nav-2 ul {
+        flex-direction: column;
     }
 
     .h11 {
@@ -691,6 +730,12 @@ input {
 
     .bar {
         margin-left: 15px;
+    }
+
+    .opener {
+        border: 0;
+        height: 100px;
+        width:200px;
     }
 }
 
