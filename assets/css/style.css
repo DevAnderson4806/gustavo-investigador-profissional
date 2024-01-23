@@ -19,7 +19,8 @@
 }
 
 .open {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-menu-icon {
@@ -618,7 +619,7 @@ input {
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 599px){
+@media screen and (min-width: 500px) and (max-width: 599px){
     nav ul li{
         display: none;
     }
@@ -626,6 +627,8 @@ input {
     .mobile-menu-icon {
         display: block;
         z-index: 99;
+        width: 1000px;
+        background-color: #000;
     }
 
     .mobile-menu-icon button {
@@ -737,6 +740,264 @@ input {
 
     .bar {
         margin-left: 15px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 399px){
+    nav ul li{
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        z-index: 99;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 50px;
+    }
+
+    .mobile-menu-icon button img {
+        width: 45px;
+        height: 40px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu li {
+        display: block;
+        padding-top: 1.2rem;
+        z-index: 99;
+    }
+
+    .nav-2 {
+        width: 100%;
+        height: 110px;
+        background-size: 110% 390%;
+    }
+
+    .logo {
+        height: 70px;
+        width: 70px;
+        margin-left: 5px;
+        margin-right: 30px;
+    }
+
+    .nav-2 ul li {
+        margin-right: 10px;
+        font-size: 16px;
+        margin-top: 70px;
+        font-weight: bold;
+    }
+
+    .h11 {
+        margin-top: 0px;
+        width: 35ch;
+        font-size: 15px;
+        padding-left: 0px;
+        margin-right: 10%;
+    }
+
+    .h12 {
+        width: 45ch;
+        font-size: 10px;
+        margin-right: 10%;
+    }
+
+    .content {
+        background-size: calc(100% + 10%) 110%;
+        height: 100%;
+    }
+
+    .start h2 {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 250px;
+    }
+
+    .title1 {
+        font-size: 15px;
+        margin-left: 55px;
+        margin-right: 20px;
+        line-height: 40px;
+    }
+
+    .pai-slide {
+        width: 90%;
+        height: 50%;
+        margin-left: -35px;
+    }
+
+    .explicação-sobre1 {
+        margin-left: -75px;
+        width: 155%;
+    }
+
+    .explicação-sobre2 {
+        margin-left: -60px;
+    }
+
+    .title2 {
+        margin-left: -120px;
+        font-size: 20px;
+        margin-left: -140px;
+        border-bottom: 2px solid #777;
+        border-radius: 40%;
+    }
+
+    .paragrafo-sobre {
+        width: 50%;
+        font-size: 17px;
+        line-height: 175%;
+        margin-left: -55px;
+        margin-top: 20px;
+        margin-right: 100px;
+    }
+
+    .secondaria {
+        background-size: calc(100% + 20%) 100%;
+    }
+
+    .bar {
+        margin-left: 5px;
+        height: 20px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 499px){
+    nav ul li{
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        z-index: 99;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 50px;
+    }
+
+    .mobile-menu-icon button img {
+        width: 50px;
+        height: 45px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu li {
+        display: block;
+        padding-top: 1.2rem;
+        z-index: 99;
+    }
+
+    .nav-2 {
+        width: 100%;
+        height: 120px;
+        background-size: 120% 400%;
+    }
+
+    .logo {
+        height: 90px;
+        width: 90px;
+        margin-left: 5px;
+        margin-right: 30px;
+    }
+
+    .nav-2 ul li {
+        margin-right: 10px;
+        font-size: 16px;
+        margin-top: 70px;
+        font-weight: bold;
+    }
+
+    .h11 {
+        margin-top: 0px;
+        width: 35ch;
+        font-size: 19px;
+        padding-left: 0px;
+        margin-right: 10%;
+    }
+
+    .h12 {
+        width: 45ch;
+        font-size: 15px;
+        margin-right: 10%;
+    }
+
+    .content {
+        background-size: calc(100% + 10%) 110%;
+        height: 100%;
+    }
+
+    .start h2 {
+        margin-left: 10px;
+        margin-top: 250px;
+    }
+
+    .title1 {
+        font-size: 25px;
+        margin-left: 35px;
+        margin-right: 25px;
+        line-height: 40px;
+    }
+
+    .pai-slide {
+        width: 90%;
+        margin-left: -50px;
+    }
+
+    .explicação-sobre1 {
+        margin-left: -75px;
+        width: 155%;
+    }
+
+    .explicação-sobre2 {
+        margin-left: -60px;
+    }
+
+    .title2 {
+        margin-left: -120px;
+        font-size: 25px;
+        margin-left: -120px;
+        border-bottom: 2px solid #777;
+        border-radius: 40%;
+    }
+
+    .paragrafo-sobre {
+        width: 50%;
+        font-size: 22px;
+        line-height: 165%;
+        margin-left: -55px;
+        margin-top: 40px;
+        margin-right: 100px;
+    }
+
+    .secondaria {
+        background-size: calc(100% + 20%) 100%;
+    }
+
+    .bar {
+        margin-left: 5px;
+        height: 20px;
+        width: 40px;
     }
 }
 
