@@ -189,38 +189,117 @@ nav ul li{
     height: 800px;
     background-image: url("https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/407078402_1874486362948106_4132011115753112426_n.jpg?ccb=11-4&oh=01_AdTmKgb3VIBiozyNy5YKtPrqMrlwkcCIVPLGh9_FTuHtAg&oe=65C6526D&_nc_sid=e6ed6c&_nc_cat=111");
     background-size: 100% 100%;
+    border-bottom: 5px solid #777;
 }
 
 .quem-somos {
     height: 800px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.62);
 }
 
 .titulo3 {
     color: #ffea00;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 50px;
-    margin-left: 35%;
+    font-size: 60px;
+    margin-left: 40%;
     padding-top: 10px;
     text-shadow: 3px 2px 10px #999;
 }
 
 .sobre-principal {
-    width: 50%;
-    height: 500px;
+    width: 60%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     overflow: hidden;
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 50px;
     border-radius: 30px;
     border: 2px solid #cdcdcd;
     box-shadow: 0px 0px 20px #999;
+}
+
+.span-somos {
+    color: #ffea00;
+    font-size: 60px;
+    padding-left: 25%;
+    margin-bottom: 50px;
+    border-bottom:2px solid #cdcdcdbb;
+    box-shadow: 0px 0px 15px #999;
+}
+
+.paragrafos-somos { 
+    margin-left: 40px;
+    margin-right: 10px;
+    padding-left: 50px;
+    line-height: 60px;
+    padding-right: 70px;
+    color: #fff;
+    font-size: 40px;
+    /*overflow: hidden;*/
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.paragrafos-somos::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+    background-color: #cdcdcd;
+    border-radius: 50px;
+    margin-right: 50px;
+    box-shadow: 0px 0px 15px #ebdd44;
+}
+
+.paragrafos-somos::-webkit-scrollbar-thumb {
+    background-color: #eee;
+    border-radius: 20px;
+    position: absolute;
+    height: 10px;
+    box-shadow: 0px 0px 15px #222;
+}
+
+footer {
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.62);
+}
+
+footer h1 {
+    color: #d8c620f8;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px #111;
+}
+
+.div-footer {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding-top: 10%;
+    margin-left: 10%;
+    text-align: center;
+    height: 200px;
+    width: 80%;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0px 0px 20px #999;
+}
+
+.hero-image {
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    margin-left: 600px;
+    position: absolute;
+    top: 50px;
+    border-radius: 10px;
+    background-image: url("https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/407078402_1874486362948106_4132011115753112426_n.jpg?ccb=11-4&oh=01_AdTmKgb3VIBiozyNy5YKtPrqMrlwkcCIVPLGh9_FTuHtAg&oe=65C6526D&_nc_sid=e6ed6c&_nc_cat=111");
+    background-size: cover;
+}
+
+.hero-image img {
+    overflow: cover;
 }
 
 .sobre {
@@ -439,6 +518,27 @@ input {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1029px){
+    .paragrafos-somos {
+        font-size: 35px;
+        padding-left: 10px;
+        padding-right: 15px;
+    }
+
+    .span-somos {
+        padding-left: 19%;
+        margin-bottom: 15px;
+        padding-bottom: 25px;
+    }
+
+    .titulo3 {
+        margin-left: 30%;
+    }
+
+    .sobre-principal {
+        width: 80%;
+        margin-left: 10%;
+    }
+
     .nav-2 {
         width: 100%;
         height: 130px;
