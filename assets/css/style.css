@@ -65,6 +65,13 @@ header {
 nav ul li a {
     color: white;
     text-decoration: none;
+    transform: scale(1.1);
+}
+
+nav ul li a:hover {
+    color: #ffea00;
+    text-decoration: none;
+    transform: scale(1.1);
 }
 
 nav ul li{
@@ -263,14 +270,46 @@ nav ul li{
 }
 
 footer {
+    padding-top: 20px;
     height: 350px;
-    background-color: rgba(0, 0, 0, 0.62);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 footer h1 {
+    margin-left: 15px;
+    font-size: 30px;
+    position: absolute;
     color: #d8c620f8;
     text-transform: uppercase;
-    text-shadow: 0px 0px 10px #111;
+    text-shadow: 0px 0px 10px #555;
+    top: 40px;
+}
+
+footer h2 {
+    margin-left: 105px;
+    font-size: 20px;
+    position: absolute;
+    color: #ddd;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px #555;
+    top: 80px;
+    text-shadow: 0px 0px 10px #555;
+}
+
+footer h3 {
+    margin-left: 155px;
+    font-size: 15px;
+    position: absolute;
+    color: #ffea00;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px #555;
+    top: 120px;
+    text-shadow: 0px 0px 10px #555;
+}
+
+.link-footer {
+    color: transparent;
+    background-color: transparent;
 }
 
 .div-footer {
@@ -278,19 +317,21 @@ footer h1 {
     border: 2px solid #ccc;
     padding-top: 10%;
     margin-left: 10%;
-    text-align: center;
+    /*text-align: center;*/
     height: 200px;
     width: 80%;
     backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(56px);
     box-shadow: 0px 0px 20px #999;
 }
 
 .hero-image {
+    border: 4px solid #222;
+    box-shadow: 0px 0px 10px #d8c620f8;
     overflow: hidden;
     width: 300px;
     height: 200px;
-    margin-left: 600px;
+    margin-left: 650px;
     position: absolute;
     top: 50px;
     border-radius: 10px;
@@ -301,6 +342,48 @@ footer h1 {
 .hero-image img {
     overflow: cover;
 }
+
+.image-facebook {
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #eee;
+    border: 2px solid #d8c620f8;
+}
+
+.imagem-whatsapp {
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-left: 190px;
+    margin-top: 90px;
+    box-shadow: 0px 0px 10px #eee;
+    border: 2px solid #d8c620f8;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.imagem-instagram {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px #eee;
+    border-radius: 19px;
+    transition: .6s;
+    cursor: pointer;
+    border: 2px solid #d8c620f8;
+}
+
+.imagem-whatsapp:hover {
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.imagem-instagram:hover {
+    transform: scale(1.2);
+    transition: .4s;
+} 
 
 .sobre {
     background-color: rgba(0, 0, 0, 0.7);
