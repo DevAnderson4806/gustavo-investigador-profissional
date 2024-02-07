@@ -4,6 +4,18 @@
         background-repeat: no-repeat;
     }
 
+    .menu-3 a {
+        color: white;
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+
+    .menu-3 a:hover{
+        color: #ffea00;
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+
     .nav-2 {
         background-image: url(https://blog.ipog.edu.br/wp-content/uploads/2017/12/perito-criminal.jpg);
         background-size: calc( 100vh + 50%) 100vh;
