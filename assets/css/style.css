@@ -1,7 +1,16 @@
-    * {
-        padding: 0;
-        margin: 0;
-        background-repeat: no-repeat;
+* {
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+    #indicator {
+        background-color: #ffea00;
+        height: 3px;
+        width: 0;
+        position: fixed;
+        top: 0;
+        z-index: 100;
     }
 
     .menu-3 a {
@@ -17,6 +26,9 @@
     }
 
     .nav-2 {
+        position: sticky;
+        top: 0;
+        z-index: 99;
         background-image: url(https://blog.ipog.edu.br/wp-content/uploads/2017/12/perito-criminal.jpg);
         background-size: calc( 100vh + 50%) 100vh;
         display: flex;
@@ -35,7 +47,10 @@
     }
 
     .menu-3 {
+        position: sticky;
+        top: 0;
         display: none;
+        z-index: 99;
     }
 
     .open {
@@ -193,7 +208,7 @@
 
 
     .secondaria {
-        border-top: 3px solid #777;
+        border-top: 3px solid #999;
         background-color: #555;
         background-size: calc( 100vh + 50%) calc(100vh + 10%);
         display: flex;
@@ -201,14 +216,14 @@
         background-image: url(https://blog.ipog.edu.br/wp-content/uploads/2017/12/perito-criminal.jpg);
         background-repeat: no-repeat;
         height: 100vh;
-        border-bottom: 3px solid #777;
+        border-bottom: 3px solid #999;
     }
 
     .terciario {
         height: 800px;
-        background-image: url("https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/407078402_1874486362948106_4132011115753112426_n.jpg?ccb=11-4&oh=01_AdTmKgb3VIBiozyNy5YKtPrqMrlwkcCIVPLGh9_FTuHtAg&oe=65C6526D&_nc_sid=e6ed6c&_nc_cat=111");
+        background-image: url("https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/407078402_1874486362948106_4132011115753112426_n.jpg?ccb=11-4&oh=01_AdQ8yp5lTs_WLnzV4HfYDbUDUzC-37_lWExlRRzf5K4Lqg&oe=65D73DAD&_nc_sid=e6ed6c&_nc_cat=111");
         background-size: 100% 100%;
-        border-bottom: 5px solid #777;
+        border-bottom: 5px solid #999;
         width: 100%;
     }
 
@@ -261,7 +276,6 @@
         padding-right: 70px;
         color: #fff;
         font-size: 40px;
-        /*overflow: hidden;*/
         overflow-y: scroll;
         margin-bottom: 20px;
     }
@@ -283,11 +297,158 @@
         box-shadow: 0px 0px 15px #222;
     }
 
+    .quarto {
+        height: 850px;
+        background-color: #777;
+        background-image: url(/assets/images/WhatsApp\ Image\ 2024-02-06\ at\ 17.46.12\ \(1\).jpeg);
+        background-size: 100% 100%;
+    }
+
+    .serviços {
+        height: 850px;
+        background-color: rgba(0, 0, 0, 0.62);
+    }
+
+    .ser {
+        background-color: #000;
+        width: 100%;
+        height: 100px;
+        z-index: 99;
+    }
+
+    .titulo4 {
+        color: yellow;
+        font-size: 90px;
+        margin-left: 470px;
+        text-shadow: 0px 0px 10px #ccc;
+    }
+
+    .container-slider {
+        border-radius: 50px;
+        height: 550px;
+        display: flex;
+        width: 800px;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-left: 240px;
+        margin-top: 100px;
+        background-image: url("/assets/images/WhatsApp Image 2024-02-06 at 17.46.12.jpeg");
+        background-size: 100% 100%;
+        background-color: rgba(0, 0, 0, 0.62);
+        filter: brightness(0.90);
+        border: 5px solid #000;
+        box-shadow: 0px 0px 20px #ccc;
+        transition: opacity .2s;
+    }
+
+    .containers {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+
+    .slider .on {
+        opacity: 1;
+        overflow-y: scroll;
+    }
+
+    .div-sliders {
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+        opacity: 1;
+        color: #eee;
+        font-size: 50px;
+    }
+
+    .sliders {
+        position: absolute;
+        opacity: 1 ;
+        width: 100%;
+        border-radius: 20px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.82);
+        overflow-y: scroll;
+        display: flex;
+        overflow: hidden;
+        overflow-y: scroll;
+        display: flex;
+    }
+
+    .sliders::-webkit-scrollbar {
+        width: 10px;
+        position: absolute;
+        background-color: #cdcdcd;
+        border-radius: 50px;
+        margin-right: 50px;
+        padding-right: 50px;
+        box-shadow: 0px 0px 15px #ebdd44;
+    }
+
+    .sliders::-webkit-scrollbar-thumb {
+        background-color: #222;
+        border-radius: 20px;
+        position: absolute;
+        height: 10px;
+        box-shadow: 0px 0px 15px #fff;
+    }
+
+    .div-sliders p {
+        color: #fff;
+        font-size: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 25px;
+    }
+    .div-sliders p span {
+        padding-left: 200px;
+        color: #d8c620f8;
+    }
+
+    .div-sliders p span a{
+        padding-left: 200px;
+        color: yellow;
+        text-decoration: line;
+    }
+
+    #down {
+        margin-left: 10px;
+    }
+
+    #up {
+        margin-right: 10px;
+    }
+
+    #up , #down {
+        border-radius: 10px;
+        width: 70px;
+        height: 60px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color:  black;
+        transition: .4s;
+        border: 2px solid #ccc;
+    }
+
+    #up:hover, #down:hover {
+        background-color: #999;
+        transition: .5s;
+        color: #fff;
+    }
+
     footer {
         width: 100%;
         padding-top: 20px;
         height: 350px;
         background-color: rgba(0, 0, 0, 0.9);
+        border-top: 3px solid #999;
     }
 
     footer h1 {
@@ -350,7 +511,7 @@
         position: absolute;
         top: 50px;
         border-radius: 10px;
-        background-image: url("https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/407078402_1874486362948106_4132011115753112426_n.jpg?ccb=11-4&oh=01_AdTmKgb3VIBiozyNy5YKtPrqMrlwkcCIVPLGh9_FTuHtAg&oe=65C6526D&_nc_sid=e6ed6c&_nc_cat=111");
+        background-image: url("https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/407078402_1874486362948106_4132011115753112426_n.jpg?ccb=11-4&oh=01_AdQ8yp5lTs_WLnzV4HfYDbUDUzC-37_lWExlRRzf5K4Lqg&oe=65D73DAD&_nc_sid=e6ed6c&_nc_cat=111");
         background-size: cover;
     }
 
