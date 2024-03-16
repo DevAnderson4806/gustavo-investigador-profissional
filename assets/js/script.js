@@ -35,39 +35,22 @@ function nextSlide(){
     document.getElementById("slide" + count).checked = true;
 }
 
-const slider = document.querySelectorAll('.sliders');
-const btnPrev = document.getElementById('down');
-const btnNext = document.getElementById('up');
+let slider3 = document.querySelector('.s-1')
 
-let currentSlide = 0;
-
-function hideSlider() {
-    slider.forEach(item => item.classList.remove('on'))
+function darup() {
+    trocarindex()
+    console.log('atribuição da função')
 }
 
-function showSlider() {
-    slider[currentSlide].classList.add('on')
+function trocarindex() {
+    slider3.innerHTML = '<p class="slider">Nosso compromisso é trabalhar de forma legalizada, seguindo a Lei 13.432/17, artigo 154, com contratos e relatórios que garantem transparência e segurança para nossos clientes. Conte conosco para serviços confiáveis e dentro das normas estabelecidas. 💼✅ #Legalidade #Transparência<span>A VERDADE SOBRE A LEI DO DETETIVE<a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13432.htm" target="_blank">LEI Nº 13.432, DE 11 DE ABRIL DE 2017. </a>Que reconhece a profissão, o que podemos ou não, deveres, direitos, etc. </span></p>'
+} 
+
+function sliderdowm() {
+    trocarindex2()
+    console.log('atribuição2')
 }
 
-function NextSlider() {
-    hideSlider()
-    if(currentSlide === slider.length -1) {
-    currentSlide = 0
-    } else {
-    currentSlide++
-    }
-    showSlider()
+function trocarindex2() {
+    slider3.innerHTML = '<div class="complemento-slider s-1"><p class="slider">texto dois para tua informação</p></div>'
 }
-
-function prevSlider() {
-    hideSlider()
-    if(currentSlide === 0) {
-    currentSlide = slider.length -1
-    } else {
-    currentSlide--
-    }
-    showSlider()
-}
-
-btnNext.addEventListener('click', NextSlider)
-btnPrev.addEventListener('click', prevSlider)

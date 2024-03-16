@@ -221,7 +221,7 @@
 
     .terciario {
         height: 800px;
-        background-image: url("https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/407078402_1874486362948106_4132011115753112426_n.jpg?ccb=11-4&oh=01_AdQ8yp5lTs_WLnzV4HfYDbUDUzC-37_lWExlRRzf5K4Lqg&oe=65D73DAD&_nc_sid=e6ed6c&_nc_cat=111");
+        background-image: url("../images/WhatsApp\ Image\ 2024-03-06\ at\ 18.44.54.jpeg");
         background-size: 100% 100%;
         border-bottom: 5px solid #999;
         width: 100%;
@@ -300,7 +300,7 @@
     .quarto {
         height: 850px;
         background-color: #777;
-        background-image: url(/assets/images/WhatsApp\ Image\ 2024-02-06\ at\ 17.46.12\ \(1\).jpeg);
+        background-image: url("/assets/images/WhatsApp\ Image\ 2024-02-06\ at\ 17.46.12\ \(1\).jpeg");
         background-size: 100% 100%;
     }
 
@@ -319,7 +319,7 @@
     .titulo4 {
         color: yellow;
         font-size: 90px;
-        margin-left: 470px;
+        margin-left: 500px;
         text-shadow: 0px 0px 10px #ccc;
     }
 
@@ -361,10 +361,26 @@
     }
 
     .slider {
-        width: 100%;
+        width: 150%;
+        margin-left: 100px;
+        margin-right: 200px;
         opacity: 1;
         color: #eee;
         font-size: 50px;
+    }
+
+    .complemento-slider {
+        width: 50%;
+        margin-right: 190px;
+    }
+
+    .slider span {
+        color: #d8c620f8;
+    }
+
+    .onbaby {
+        transition: .6s;
+        margin-left: 600px;
     }
 
     .sliders {
@@ -399,19 +415,19 @@
         box-shadow: 0px 0px 15px #fff;
     }
 
-    .div-sliders p {
+    .complemento-slider p {
         color: #fff;
         font-size: 50px;
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 25px;
     }
-    .div-sliders p span {
+    .complemento-slider p span {
         padding-left: 200px;
         color: #d8c620f8;
     }
 
-    .div-sliders p span a{
+    .complemento-slider p span a{
         padding-left: 200px;
         color: yellow;
         text-decoration: line;
@@ -511,7 +527,7 @@
         position: absolute;
         top: 50px;
         border-radius: 10px;
-        background-image: url("https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/407078402_1874486362948106_4132011115753112426_n.jpg?ccb=11-4&oh=01_AdQ8yp5lTs_WLnzV4HfYDbUDUzC-37_lWExlRRzf5K4Lqg&oe=65D73DAD&_nc_sid=e6ed6c&_nc_cat=111");
+        background-image: url("../images/WhatsApp\ Image\ 2024-03-06\ at\ 18.44.54.jpeg");
         background-size: cover;
     }
 
@@ -829,6 +845,20 @@
         .titulo3 {
             margin-left: 170px;
         }
+
+        .container-slider {
+            width: 85%;
+            margin-left: 55px;
+            height: 50%;
+        }
+
+        .titulo4 {
+            margin-left: 190px;
+        }
+
+        .sliders {
+            height: 400px;
+        }
     }
 
     @media screen and (min-width: 900px) and (max-width: 1029px){
@@ -950,6 +980,15 @@
             margin-top: 100px;
             margin-left: 80px;
         }
+
+        .container-slider {
+            width: 80%;
+            margin-left: 90px;
+        }
+
+        .titulo4 {
+            margin-left: 330px;
+        }
     }
 
     @media screen and (min-width: 800px) and (max-width: 899px){
@@ -1057,6 +1096,11 @@
         .sobre-principal {
             width: 700px;
             margin-left: 50px;
+        }
+
+        .container-slider {
+            width: 80%;
+            margin-left: 100px;
         }
     }
 
