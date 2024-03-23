@@ -52,5 +52,5 @@ function sliderdowm() {
 }
 
 function trocarindex2() {
-    slider3.innerHTML = '<div class="complemento-slider s-1"><p class="slider">texto dois para tua informação</p></div>'
+    slider3.innerHTML = '<div class="complemento-slider s-1"><p class="slider">... loading ... wait a moments ... shortly please wait ...</p></div>'
 }
