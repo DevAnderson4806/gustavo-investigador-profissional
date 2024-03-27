@@ -15,7 +15,7 @@ document.getElementById("slide1").checked = true;
 
 setInterval( function() {
     nextSlide()
-}, 5000)
+}, 10000)
 
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');

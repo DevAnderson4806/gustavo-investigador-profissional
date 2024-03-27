@@ -703,6 +703,32 @@
         padding-right: 60px;
     }
 
+    .paragrafo-sobre2 {
+        width: 700px;
+        margin-left: -100px;
+    }
+
+    .oia2 {
+        padding-left: -100px;
+    }
+
+    .paragrafo-sobre3, .paragrafo-sobre4 {
+        width: 700px;
+        height: 300px;
+        margin-left: -100px;
+    }
+
+    .title4 {
+        margin-left: -50px;
+    }
+
+    .aqui-oia {
+        position: fixed;
+        background-color: #fff;
+        right: 10px;
+        bottom: 10px;
+    }
+
     .s1, .s2 {
         display: flex;
         flex-direction: column;
