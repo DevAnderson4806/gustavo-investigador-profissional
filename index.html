@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>ESTEVÃO INVESTIGADOR PROFISSIONAL</title>
 
 </head>
@@ -56,13 +57,57 @@
 
     </div>    
     <header>
+
+        <div class="menu-chat">
+
+            <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+                
+            <li style="--i:0;">
+                <a href="#" id="about-home"><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+
+            <li style="--i:1;">
+                <a href="https://wa.me/+558196482049" target="_blank" id="menu-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </li>
+
+            <li style="--i:2;">
+                <a href="https://www.facebook.com/profile.php?id=61554900770152" id="menu-facebook" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+
+            <li style="--i:3;">
+                <a href="https://www.instagram.com/estevaoperitografotecnico/" target="_blank" id="menu-instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+
+        </div>
+        
         <!--<div class="chama-no-chat">
+            
+            <nav class="menu-chat">
+                <input type="checkbox" name="menu-circular" id="menu-circular" class="menu-circular">
+                
+                <label for="menucircular" class="menu-btn">
+                    <span class="linha linha-1"></span>
+                    <span class="linha linha-2"></span>
+                    <span class="linha linha-3"></span>
+                </label>
 
-            <img src="./assets/images/menu.png" alt="segundo menu hehe" class="aqui-oia">
+                <a href="#" class="menu-a ai-1">
+                    <i class="fa fa-home"></i>
+                </a>
 
-            <div>
+                <a href="https://wa.me/+558196482049" target="_blank" class="menu-a ai-2">
+                    <i class="fa fa-phone"></i>
+                </a>
 
-            </div>
+                <a href="https://www.instagram.com/estevaoperitografotecnico/" target="_blank" class="menu-a ai-3">
+                    <i class="fa fa-user-circle"></i>
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=61554900770152" target="_blank" class="menu-a ai-4">
+                    <i class="fa fa-user-ninja"></i>
+                </a>
+            
+            </nav>
         
         </div>-->
 
@@ -311,6 +356,15 @@
     </footer>
     
     <script src="assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let toggle = document.querySelector('.toggle')
+        let menu = document.querySelector('.menu-chat')
+        toggle.onclick = function(){
+            menu.classList.toggle('active')
+        }
+    </script>
 
 </body>
 
