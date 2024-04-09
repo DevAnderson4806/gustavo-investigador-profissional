@@ -793,6 +793,7 @@
     }*/
 
     .menu-chat {
+        z-index: 10000000000;
         right: 5px;
         bottom: 10px;
         position: fixed;
