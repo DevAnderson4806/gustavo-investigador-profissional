@@ -886,10 +886,11 @@
         z-index: 1000000;
         border-radius: 50%;
         cursor: pointer;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 10px rgba(244, 244, 244, 0.5);
         font-size: 2em;
         transition: transform 1.25s;
         color: blue;
+        border: 2px solid #000;
     }
 
     .menu-chat.active .toggle {
@@ -1057,6 +1058,19 @@
 
         .sliders {
             height: 400px;
+        }
+
+        .toggle {
+            width: 50px;
+            height: 50px;
+            bottom: 25px;
+            position: absolute;
+        }
+
+        .menu-chat li {
+            bottom: 45px;
+            width: 25px;
+            height: 25px;
         }
 
         /*.chama-no-chat {
